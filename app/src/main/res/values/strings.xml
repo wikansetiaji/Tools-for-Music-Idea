@@ -1,3 +1,26 @@
 <resources>
-    <string name="app_name">ToolsforMusicIdea</string>
+    <string name="app_name">Tools for Music Idea</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="recent">Recent</string>
+    <string name="note">Note</string>
+    <string name="video">Video</string>
+    <string name="audio">Audio</string>
+    <string name="audio_12_21_2019_mp3">Audio 12/21/2019.mp3</string>
+    <string name="_12_21_0">12 : 21 : 0</string>
+    <string name="write_your_note_here">Write your note here</string>
+    <string name="_0_0_0">0:0:0</string>
+    <string name="record">Record</string>
+    <string name="pause">Pause</string>
+    <string name="stop">Stop</string>
+    <string name="tools_for_music_idea">Tools for Music Idea</string>
+    <string name="item">item</string>
+    <string name="_12_20_00">12:20:00</string>
+    <string name="play">play</string>
+    <string name="edit">edit</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_splash_screen">SplashScreen</string>
 </resources>
+

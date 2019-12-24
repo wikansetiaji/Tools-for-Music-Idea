@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".ui.main.AddNoteFragment">
+    <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:title="Edit Note"
+                app:navigationIcon="?attr/homeAsUpIndicator"
+                app:popupTheme="@style/AppTheme.PopupOverlay"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            app:layout_constraintTop_toBottomOf="@id/appbar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+        <EditText
+                android:lines="2"
+                android:id="@+id/text_input"
+                app:layout_constraintTop_toTopOf="parent"
+                android:hint="@string/write_your_note_here"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/save"
+            android:backgroundTint="@color/colorPrimary"
+            android:background="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_done_all_black_24dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

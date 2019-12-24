@@ -1,0 +1,67 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".ui.main.AddNoteFragment">
+    <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:title="Record Audio"
+                app:navigationIcon="?attr/homeAsUpIndicator"
+                app:popupTheme="@style/AppTheme.PopupOverlay"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            app:layout_constraintTop_toBottomOf="@id/appbar"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="8dp" tools:layout_editor_absoluteX="9dp">
+        <TextView
+                android:id="@+id/time"
+                android:textSize="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/_0_0_0"/>
+        <Button
+                android:id="@+id/record"
+                app:layout_constraintTop_toBottomOf="@id/time"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/record"/>
+        <Button
+                android:id="@+id/pause"
+                android:visibility="invisible"
+                app:layout_constraintTop_toBottomOf="@id/time"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pause"/>
+        <Button
+                android:id="@+id/stop"
+                app:layout_constraintTop_toBottomOf="@id/time"
+                app:layout_constraintLeft_toRightOf="@id/record"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stop"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

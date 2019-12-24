@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tools for Music Idea</string>
+    <string name="action_settings">Pengaturan</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="recent">Terkini</string>
+    <string name="note">Catatan</string>
+    <string name="video">Video</string>
+    <string name="audio">Suara</string>
+    <string name="audio_12_21_2019_mp3">Video 12/21/2019.mp3</string>
+    <string name="_12_21_0">12 : 21 : 0</string>
+    <string name="write_your_note_here">Tulis catatanmu disini</string>
+    <string name="_0_0_0">0:0:0</string>
+    <string name="record">Rekam</string>
+    <string name="pause">Pause</string>
+    <string name="stop">Stop</string>
+    <string name="tools_for_music_idea">Tools for Music Idea</string>
+    <string name="item">TODO 1: IWIW</string>
+    <string name="_12_20_00">12:20:00</string>
+    <string name="play">mulai</string>
+    <string name="edit">ubah</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+</resources>
+

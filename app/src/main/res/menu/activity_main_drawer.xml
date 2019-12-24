@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/recent"
+                android:icon="@drawable/ic_access_time_black_24dp"
+                android:title="@string/recent"/>
+        <item
+                android:id="@+id/note"
+                android:icon="@drawable/ic_text_fields_black_24dp_1"
+                android:title="@string/note"/>
+        <item
+                android:id="@+id/video"
+                android:icon="@drawable/ic_videocam_black_24dp"
+                android:title="@string/video"/>
+        <item
+                android:id="@+id/audio"
+                android:icon="@drawable/ic_audiotrack_black_24dp_1"
+                android:title="@string/audio"/>
+        <item
+                android:id="@+id/news"
+                android:icon="@drawable/ic_speaker_notes_black_24dp"
+                android:title="Top Music News"
+                android:enabled="false"/>
+    </group>
+
+</menu>
